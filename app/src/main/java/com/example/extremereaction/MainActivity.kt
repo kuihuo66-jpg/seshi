@@ -24,7 +24,7 @@ class MainActivity : Activity() {
     override fun onCreate(b: Bundle?) { super.onCreate(b); build(); showHome() }
     private fun build(){
         root=LinearLayout(this).apply{orientation=LinearLayout.VERTICAL;setPadding(28,28,28,28);setBackgroundColor(Color.rgb(9,11,20))}
-        title=TextView(this).apply{textSize=30f;setTextColor(Color.WHITE);gravity=Gravity.CENTER;fontWeight=700}
+        title=TextView(this).apply{textSize=30f;setTextColor(Color.WHITE);gravity=Gravity.CENTER;setTypeface(null, android.graphics.Typeface.BOLD)}
         info=TextView(this).apply{textSize=16f;setTextColor(Color.LTGRAY);gravity=Gravity.CENTER;setPadding(0,18,0,18)}
         timer=TextView(this).apply{textSize=48f;setTextColor(Color.WHITE);gravity=Gravity.CENTER}
         scoreView=TextView(this).apply{textSize=15f;setTextColor(Color.GRAY);gravity=Gravity.CENTER}
